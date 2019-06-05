@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notes component renders the notes list 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <Note
+      note={
+        Object {
+          "text": "do this",
+          "title": "to do",
+        }
+      }
+    />
+  </li>
+  <li
+    key="1"
+  >
+    <Note
+      note={
+        Object {
+          "text": "do it again",
+          "title": "another todo",
+        }
+      }
+    />
+  </li>
+</ul>
+`;
