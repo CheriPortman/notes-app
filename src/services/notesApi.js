@@ -15,7 +15,6 @@ export const createNote = note => {
 };
 
 export const getNotes = () => {
-  console.log('in getNotes');
   return fetch(url, {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' }
@@ -23,6 +22,20 @@ export const getNotes = () => {
     .then(res => ([res.ok, res.json()]))
     .then(([ok, json]) => {
       if(!ok) throw 'cannot find notes';
+      return json;
+    });
+};
+
+export const deleteNote = (_id) => {
+  console.log('in deleteNote');
+  return fetch(url + _id, {
+    method: 'DELETE',
+    headers: { 'Content-Type': 'application/json' },
+    _id: JSON.stringify(_id)
+  })
+    .then(res => ([res.ok, res.json()]))
+    .then(([ok, json]) => {
+      if(!ok) throw 'cannot delete your note';
       return json;
     });
 };

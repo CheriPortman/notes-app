@@ -8,7 +8,7 @@ export default function App() {
     <>
       <h1>Take Note: </h1>
       <CreateNoteForm />,
-      <AllNotes />
+      {/* <AllNotes /> */}
     </>
   );
 }

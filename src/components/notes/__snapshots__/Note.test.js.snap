@@ -5,8 +5,9 @@ exports[`Note component renders the Note app 1`] = `
   <p>
     note
   </p>
-  <p>
-    note
-  </p>
+  <p />
+  <button>
+    Delete Note
+  </button>
 </section>
 `;
