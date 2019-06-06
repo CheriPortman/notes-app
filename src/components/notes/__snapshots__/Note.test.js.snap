@@ -6,8 +6,10 @@ exports[`Note component renders the Note app 1`] = `
     note
   </p>
   <p />
-  <button>
-    Delete Note
+  <button
+    onClick={[Function]}
+  >
+    Remove Note
   </button>
 </section>
 `;

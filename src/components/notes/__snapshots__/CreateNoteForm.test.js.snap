@@ -1,33 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CreateNoteForm componenet renders the form 1`] = `
-<form
+<styled.form
   onSubmit={[Function]}
 >
-  <label
+  <styled.label
     htmlFor="title"
   >
     Name your note:
-    <input
+    <styled.input
       name="title"
       onChange={[Function]}
       type="text"
       value=""
     />
-  </label>
-  <label
+  </styled.label>
+  <styled.label
     htmlFor="body"
   >
     Enter the text of your note:
-    <textarea
+    <styled.input
       name="body"
       onChange={[Function]}
       type="text"
       value=""
     />
-  </label>
-  <button>
+  </styled.label>
+  <styled.button>
     Submit
-  </button>
-</form>
+  </styled.button>
+</styled.form>
 `;
