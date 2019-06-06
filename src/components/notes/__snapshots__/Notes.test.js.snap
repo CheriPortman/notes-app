@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Notes component renders the notes list 1`] = `
-<ul>
-  <li
+<styled.ul>
+  <styled.li
     key="0"
   >
     <Note
@@ -13,8 +13,8 @@ exports[`Notes component renders the notes list 1`] = `
         }
       }
     />
-  </li>
-  <li
+  </styled.li>
+  <styled.li
     key="1"
   >
     <Note
@@ -25,6 +25,6 @@ exports[`Notes component renders the notes list 1`] = `
         }
       }
     />
-  </li>
-</ul>
+  </styled.li>
+</styled.ul>
 `;

@@ -5,7 +5,6 @@ import { deleteNote } from '../../services/notesApi';
 import { Button, PT } from '../styledComponents';
 
 function Note({ note }) {
-  
   return (
     <section>
       <PT>{note.title}</PT>

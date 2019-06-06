@@ -10,7 +10,7 @@ describe('CreateNoteForm componenet', () => {
 
   it('updates title on change', () => {
     const wrapper = shallow(<CreateNoteForm onSubmit={jest.fn()} />);
-    wrapper.find('[name="title"]').at(0).simulate('change', {
+    wrapper.find('[name="title"]').at(1).simulate('change', {
       target: { name: 'title', value: 'note' }
     });
   });
@@ -26,7 +26,7 @@ describe('CreateNoteForm componenet', () => {
     const submit = jest.fn();
     const wrapper = shallow(<CreateNoteForm onSubmit={submit} />);
 
-    wrapper.find('form').at(0).simulate('submit', {
+    wrapper.find('form').at(1).simulate('submit', {
       preventDefault: jest.fn(),
     });
 

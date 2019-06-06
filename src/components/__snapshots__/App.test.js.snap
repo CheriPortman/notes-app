@@ -2,10 +2,12 @@
 
 exports[`App component renders the App 1`] = `
 <styled.section>
+  <GlobalStyleComponent />
   <styled.h1>
     Take Note: 
   </styled.h1>
   <CreateNoteForm />
   ,
+  <AllNotes />
 </styled.section>
 `;

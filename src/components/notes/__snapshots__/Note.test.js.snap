@@ -2,14 +2,14 @@
 
 exports[`Note component renders the Note app 1`] = `
 <section>
-  <p>
+  <styled.p>
     note
-  </p>
+  </styled.p>
   <p />
-  <button
+  <styled.button
     onClick={[Function]}
   >
-    Remove Note
-  </button>
+    Delete This Note
+  </styled.button>
 </section>
 `;
