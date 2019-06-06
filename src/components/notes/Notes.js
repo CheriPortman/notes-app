@@ -21,7 +21,7 @@ function Notes({ notes }) {
 Notes.propTypes = {
   notes: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
+    body: PropTypes.string.isRequired
   })).isRequired
 };
 

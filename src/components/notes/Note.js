@@ -5,7 +5,7 @@ function Note({ note }) {
   return (
     <section>
       <p>{note.title}</p>
-      <p>{note.text}</p>
+      <p>{note.body}</p>
     </section>
   );
 }
@@ -13,7 +13,7 @@ function Note({ note }) {
 Note.propTypes = {
   note: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
+    body: PropTypes.string.isRequired
   }).isRequired
 };
 

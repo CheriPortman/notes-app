@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Note componenet renders the Note app 1`] = `
+exports[`Note component renders the Note app 1`] = `
 <section>
   <p>
     note
