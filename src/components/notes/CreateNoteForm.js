@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react';
+
+import { Button, Form, Input, Label, Textarea } from '../styledComponents';
 import { createNote } from '../../services/notesApi';
 
 export default class CreateNoteForm extends PureComponent {
@@ -20,17 +22,17 @@ export default class CreateNoteForm extends PureComponent {
   render() {
     const { title, body } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor="title">
+      <Form onSubmit={this.handleSubmit}>
+        <Label htmlFor="title">
           Name your note:
-          <input name="title" type="text" value={title} onChange={this.handleChange} />
-        </label>
-        <label htmlFor="body">
+          <Input name="title" type="text" value={title} onChange={this.handleChange} />
+        </Label>
+        <Label htmlFor="body">
           Enter the text of your note:
-          <textarea name="body" type="text" value={body} onChange={this.handleChange} />
-        </label>
-        <button>Submit</button>
-      </form>
+          <Textarea name="body" type="text" value={body} onChange={this.handleChange} />
+        </Label>
+        <Button>Submit</Button>
+      </Form>
     );
   }
 }
