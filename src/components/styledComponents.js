@@ -15,7 +15,6 @@ export const H1 = styled.h1`
 
 export const Wrapper = styled.section`
   background-color: yellow;
-  height: 100vh;
 `;
 
 export const Form = styled.form`
@@ -48,5 +47,26 @@ export const Textarea = styled.input`
 export const Button = styled.button`
   background-color: lilac;
   height: 2em;
-  border-radius: 15px;
+  border-radius: 5px;
+  font-family: fantasy;
+  float: right;
+`;
+
+export const Li = styled.li`
+  border: 1px solid black;
+  width: 90vw;
+  margin: 1em;
+  padding: 15px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+`;
+  
+export const Ul = styled.ul`
+  list-style: none;
+`;
+
+//PT = Title <p>
+export const PT = styled.p`
+  font-weight: bold;
 `;

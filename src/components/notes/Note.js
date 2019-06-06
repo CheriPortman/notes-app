@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { deleteNote } from '../../services/notesApi';
+import { Button, PT } from '../styledComponents';
 
 function Note({ note }) {
   
   return (
     <section>
-      <p>{note.title}</p>
+      <PT>{note.title}</PT>
       <p>{note.body}</p>
-      <button onClick={() => deleteNote(note._id)}>Remove Note</button>
+      <Button onClick={() => deleteNote(note._id)}>Delete This Note</Button>
     </section>
   );
 }

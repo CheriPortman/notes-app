@@ -10,7 +10,7 @@ export default function App() {
       <GlobalStyle />
       <H1>Take Note: </H1>
       <CreateNoteForm />,
-      {/* <AllNotes /> */}
+      <AllNotes />
     </Wrapper>
   );
 }
