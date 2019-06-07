@@ -7,8 +7,10 @@ export const createNote = note => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(note)
   })
+  //brackets because in a promise, you can only send one thing through
+  //the brackets / array make it one object
     .then(res => ([res.ok, res.json()]))
-    .then(([ok, json]) => {
+    .then(([ok, json]) => {  //here the array is 'renamed' to get rid of the dot notation
       if(!ok) throw 'cannot find your notes';
       console.log(json);
     });
